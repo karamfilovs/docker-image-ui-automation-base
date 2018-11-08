@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:17.04
 RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
