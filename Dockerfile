@@ -6,7 +6,6 @@ RUN apt-get update; apt-get clean
 RUN apt-get install -y curl wget
 
 # Prepare for Java download
-RUN apt-get install -y python-software-properties
 RUN apt-get install -y software-properties-common
 
 # Grab oracle java 8 (auto accept licence)
