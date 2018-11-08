@@ -1,7 +1,6 @@
-FROM ubuntu:17.04
-RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get upgrade -y
+FROM ubuntu:trusty
+
+RUN apt-get update; apt-get clean
 
 # Install and setup project dependencies
 RUN apt-get install -y curl wget
