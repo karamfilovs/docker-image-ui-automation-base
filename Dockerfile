@@ -49,4 +49,4 @@ RUN apt-get install -y maven
 
 #Install Allure
 RUN apt update
-RUN apt install allure
+RUN apt-get install allure
