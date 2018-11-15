@@ -46,3 +46,7 @@ RUN apt-get install -y google-chrome-stable
 
 # Install maven
 RUN apt-get install -y maven
+
+#Install Allure
+RUN apt update
+RUN apt install allure
